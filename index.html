@@ -21,8 +21,10 @@
   </head>
   <body>
     <!-- TODO: add box shadow-->
-    <div class="max-w-3xl">
-      <header class="flex justify-between bg-darkPurple pt-8 pb-16">
+    <div class="mx-auto max-w-3xl overflow-hidden">
+      <header
+        class="flex justify-between bg-darkPurple px-4 pt-8 pb-16 md:px-8"
+      >
         <img src="/assets/images/logo-light.svg" alt="logo" />
         <button
           type="button"
@@ -35,47 +37,63 @@
         <!-- after:block -->
         <section
           id="hero"
-          class="after:contet-[''] relative flex flex-col items-center text-center before:absolute before:top-0 before:left-0 before:-z-10 before:h-full before:w-full before:bg-darkPurple before:content-[''] after:absolute after:-bottom-36 after:left-0 after:-z-10 after:h-36 after:w-full after:scale-x-150 after:rounded-b-[50%] after:bg-darkPurple"
+          class="relative flex flex-col items-center px-4 text-center before:absolute before:top-0 before:left-0 before:-z-10 before:h-full before:w-full before:bg-darkPurple after:absolute after:-bottom-36 after:left-0 after:-z-10 after:h-36 after:w-full after:scale-x-150 after:rounded-b-[50%] after:bg-darkPurple md:px-8 md:after:-bottom-48 md:after:h-48"
         >
+          <img
+            src="/assets/images/bg-pattern-1.svg"
+            alt=""
+            class="absolute -left-[230px] -top-[50px] hidden md:block"
+          />
+          <img
+            src="/assets/images/bg-pattern-2.svg"
+            alt=""
+            class="absolute -right-24 -bottom-24 hidden md:block"
+          />
           <!-- <img src="/assets/images/bg-pattern-1.svg" alt="" />
             <img src="/assets/images/bg-pattern-2.svg" alt="" /> -->
-          <h1
-            class="mb-10 font-fraunces text-5xl leading-none tracking-tight text-white"
-          >
-            Data
-            <span
-              class="underline decoration-eucaplyptus decoration-4 underline-offset-8"
-              >tailored</span
+          <div class="md:px-20">
+            <h1
+              class="mb-10 font-fraunces text-5xl leading-none tracking-tight text-white md:text-6xl"
             >
-            to your needs.
-          </h1>
-          <button
-            type="button"
-            class="border-eucaplyptus bg-eucaplyptus py-4 px-6 font-bold text-darkPurple hover:border-2 hover:bg-darkPurple hover:text-eucaplyptus"
-          >
-            Learn more
-          </button>
+              Data
+              <span
+                class="underline decoration-eucaplyptus decoration-4 underline-offset-8"
+                >tailored</span
+              >
+              to your needs.
+            </h1>
+            <button
+              type="button"
+              class="border-eucaplyptus bg-eucaplyptus py-4 px-6 font-bold text-darkPurple hover:border-2 hover:bg-darkPurple hover:text-eucaplyptus"
+            >
+              Learn more
+            </button>
+          </div>
           <img
             src="/assets/images/image-hero.webp"
-            alt="hero"
-            class="absolute -bottom-60 z-10 h-[184px] w-[320px]"
+            alt="mobile"
+            class="absolute -bottom-[240px] z-10 w-[85%] md:-bottom-[340px] md:h-[296px] md:w-[514px] md:translate-x-6"
           />
         </section>
 
         <section
           id="feature"
-          class="relative before:absolute before:left-0 before:-z-20 before:h-full before:w-full before:bg-ghostWhite before:content-[''] after:absolute after:-bottom-16 after:left-0 after:-z-10 after:h-36 after:w-full after:scale-x-150 after:rounded-b-[50%] after:bg-ghostWhite"
+          class="relative px-4 before:absolute before:left-0 before:-z-20 before:h-full before:w-full before:bg-ghostWhite before:content-[''] after:absolute after:-bottom-16 after:left-0 after:-z-10 after:h-36 after:w-full after:scale-x-150 after:rounded-b-[50%] after:bg-ghostWhite md:px-20 md:pb-8"
         >
           <!-- container -->
-          <div class="flex flex-col gap-y-8 pt-80 text-center">
+          <div
+            class="flex flex-col gap-y-8 pt-64 text-center md:gap-y-16 md:pt-96"
+          >
             <!-- item 1 -->
-            <div class="flex flex-col items-center gap-y-4">
+            <div
+              class="flex flex-col items-center gap-y-4 md:flex-row md:gap-x-12"
+            >
               <div
-                class="h-12 w-12 rounded-full border border-darkPurple font-fraunces text-lg leading-[48px]"
+                class="h-12 w-12 flex-shrink-0 rounded-full border border-darkPurple font-fraunces text-lg leading-[48px] md:mt-8"
               >
                 1
               </div>
-              <div class="flex flex-col">
+              <div class="flex flex-col md:text-start">
                 <div class="mb-4 font-fraunces text-2xl">
                   Actionable insights
                 </div>
@@ -86,13 +104,15 @@
               </div>
             </div>
             <!-- item 2 -->
-            <div class="flex flex-col items-center gap-y-4">
+            <div
+              class="flex flex-col items-center gap-y-4 md:flex-row md:gap-x-12"
+            >
               <div
-                class="h-12 w-12 rounded-full border border-darkPurple font-fraunces leading-[48px]"
+                class="h-12 w-12 flex-shrink-0 rounded-full border border-darkPurple font-fraunces text-lg leading-[48px] md:mt-8"
               >
                 2
               </div>
-              <div class="flex flex-col">
+              <div class="flex flex-col md:text-start">
                 <div class="mb-4 font-fraunces text-2xl">
                   Data-driven decisions
                 </div>
@@ -104,13 +124,15 @@
               </div>
             </div>
             <!-- item 3-->
-            <div class="flex flex-col items-center gap-y-4">
+            <div
+              class="flex flex-col items-center gap-y-4 md:flex-row md:gap-x-12"
+            >
               <div
-                class="h-12 w-12 rounded-full border border-darkPurple font-fraunces leading-[48px]"
+                class="h-12 w-12 flex-shrink-0 rounded-full border border-darkPurple font-fraunces text-lg leading-[48px] md:mt-8"
               >
                 3
               </div>
-              <div class="flex flex-col">
+              <div class="flex flex-col md:text-start">
                 <div class="mb-4 font-fraunces text-2xl">Always affordable</div>
                 <div class="text-davysGray">
                   Always affordable pricing that scales with your business. Get
@@ -121,16 +143,21 @@
             </div>
           </div>
         </section>
-        <section id="founder" class="mx-auto flex flex-col items-center pt-40">
+        <section
+          id="founder"
+          class="mx-auto flex flex-col items-center px-4 pt-40 md:relative md:px-8"
+        >
           <img
             src="/assets/images/image-founder.webp"
             alt="founder"
-            class="-z-10 h-[281px] w-[281px]"
+            class="-z-10 h-[281px] w-[281px] md:absolute md:top-32 md:left-8"
           />
           <div
-            class="-mt-14 flex flex-col items-center gap-y-6 bg-darkPurple px-6 pt-8 pb-8 text-center text-white"
+            class="flex flex-col items-center justify-evenly gap-y-6 bg-darkPurple px-6 pt-8 pb-8 text-center text-white md:absolute md:top-72 md:left-52 md:h-[375px] md:w-[514px] md:items-start md:px-14 md:text-start"
           >
-            <div class="font-fraunces text-3xl">Be the first to test</div>
+            <div class="font-fraunces text-3xl md:text-5xl">
+              Be the first to test
+            </div>
             <div>
               Hi, I'm Louis Graham, the founder of the company. Book a demo call
               with me to become a beta tester for our app and kickstart your
@@ -143,10 +170,15 @@
             >
               Apply for access
             </button>
+            <img
+              src="/assets/images/bg-pattern-3.svg"
+              alt=""
+              class="absolute -bottom-24 right-3 hidden md:block"
+            />
           </div>
           <!-- <img src="/assets/images/bg-pattern-3.svg" alt="" /> -->
         </section>
-        <footer class="flex flex-col items-center py-16">
+        <footer class="flex flex-col items-center py-16 md:mt-[532px] md:pb-32">
           <img src="/assets/images/logo-dark.svg" alt="" class="mb-12" />
           <div class="flex gap-x-6">
             <img src="/assets/images/icon-facebook.svg" alt="" />
