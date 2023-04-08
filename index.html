@@ -14,22 +14,147 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Manrope&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600&family=Manrope:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <title>Frontend Mentor | Workit landing page</title>
   </head>
   <body>
-    Apply for access Data tailored to your needs. Learn more 1 Actionable
-    insights Optimize your products, improve customer satisfaction and stay
-    ahead of the competition with our product data analytics. 2 Data-driven
-    decisions Make data-driven decisions with our product data analytics. Our
-    AI-generated reports help you unlock insights hidden in your product data. 3
-    Always affordable Always affordable pricing that scales with your business.
-    Get top-quality product data analytics services without hidden costs or
-    unexpected fees. Be the first to test Hi, I'm Louis Graham, the founder of
-    the company. Book a demo call with me to become a beta tester for our app
-    and kickstart your company. Apply for access below and I’ll be in touch to
-    schedule a call. Apply for access
+    <!-- TODO: add box shadow-->
+    <div class="max-w-3xl">
+      <header class="flex justify-between bg-darkPurple pt-8 pb-16">
+        <img src="/assets/images/logo-light.svg" alt="logo" />
+        <button
+          type="button"
+          class="font-bold text-white underline decoration-eucaplyptus decoration-4 underline-offset-8 hover:text-eucaplyptus focus:text-eucaplyptus"
+        >
+          Apply for access
+        </button>
+      </header>
+      <div>
+        <!-- after:block -->
+        <section
+          id="hero"
+          class="after:contet-[''] relative flex flex-col items-center text-center before:absolute before:top-0 before:left-0 before:-z-10 before:h-full before:w-full before:bg-darkPurple before:content-[''] after:absolute after:-bottom-36 after:left-0 after:-z-10 after:h-36 after:w-full after:scale-x-150 after:rounded-b-[50%] after:bg-darkPurple"
+        >
+          <!-- <img src="/assets/images/bg-pattern-1.svg" alt="" />
+            <img src="/assets/images/bg-pattern-2.svg" alt="" /> -->
+          <h1
+            class="mb-10 font-fraunces text-5xl leading-none tracking-tight text-white"
+          >
+            Data
+            <span
+              class="underline decoration-eucaplyptus decoration-4 underline-offset-8"
+              >tailored</span
+            >
+            to your needs.
+          </h1>
+          <button
+            type="button"
+            class="border-eucaplyptus bg-eucaplyptus py-4 px-6 font-bold text-darkPurple hover:border-2 hover:bg-darkPurple hover:text-eucaplyptus"
+          >
+            Learn more
+          </button>
+          <img
+            src="/assets/images/image-hero.webp"
+            alt="hero"
+            class="absolute -bottom-60 z-10 h-[184px] w-[320px]"
+          />
+        </section>
+
+        <section
+          id="feature"
+          class="relative before:absolute before:left-0 before:-z-20 before:h-full before:w-full before:bg-ghostWhite before:content-[''] after:absolute after:-bottom-16 after:left-0 after:-z-10 after:h-36 after:w-full after:scale-x-150 after:rounded-b-[50%] after:bg-ghostWhite"
+        >
+          <!-- container -->
+          <div class="flex flex-col gap-y-8 pt-80 text-center">
+            <!-- item 1 -->
+            <div class="flex flex-col items-center gap-y-4">
+              <div
+                class="h-12 w-12 rounded-full border border-darkPurple font-fraunces text-lg leading-[48px]"
+              >
+                1
+              </div>
+              <div class="flex flex-col">
+                <div class="mb-4 font-fraunces text-2xl">
+                  Actionable insights
+                </div>
+                <div class="text-davysGray">
+                  Optimize your products, improve customer satisfaction and stay
+                  ahead of the competition with our product data analytics.
+                </div>
+              </div>
+            </div>
+            <!-- item 2 -->
+            <div class="flex flex-col items-center gap-y-4">
+              <div
+                class="h-12 w-12 rounded-full border border-darkPurple font-fraunces leading-[48px]"
+              >
+                2
+              </div>
+              <div class="flex flex-col">
+                <div class="mb-4 font-fraunces text-2xl">
+                  Data-driven decisions
+                </div>
+                <div class="text-davysGray">
+                  Make data-driven decisions with our product data analytics.
+                  Our AI-generated reports help you unlock insights hidden in
+                  your product data.
+                </div>
+              </div>
+            </div>
+            <!-- item 3-->
+            <div class="flex flex-col items-center gap-y-4">
+              <div
+                class="h-12 w-12 rounded-full border border-darkPurple font-fraunces leading-[48px]"
+              >
+                3
+              </div>
+              <div class="flex flex-col">
+                <div class="mb-4 font-fraunces text-2xl">Always affordable</div>
+                <div class="text-davysGray">
+                  Always affordable pricing that scales with your business. Get
+                  top-quality product data analytics services without hidden
+                  costs or unexpected fees.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="founder" class="mx-auto flex flex-col items-center pt-40">
+          <img
+            src="/assets/images/image-founder.webp"
+            alt="founder"
+            class="-z-10 h-[281px] w-[281px]"
+          />
+          <div
+            class="-mt-14 flex flex-col items-center gap-y-6 bg-darkPurple px-6 pt-8 pb-8 text-center text-white"
+          >
+            <div class="font-fraunces text-3xl">Be the first to test</div>
+            <div>
+              Hi, I'm Louis Graham, the founder of the company. Book a demo call
+              with me to become a beta tester for our app and kickstart your
+              company. Apply for access below and I’ll be in touch to schedule a
+              call.
+            </div>
+            <button
+              type="button"
+              class="border-eucaplyptus bg-eucaplyptus py-4 px-6 font-bold text-darkPurple hover:border-2 hover:bg-darkPurple hover:text-eucaplyptus"
+            >
+              Apply for access
+            </button>
+          </div>
+          <!-- <img src="/assets/images/bg-pattern-3.svg" alt="" /> -->
+        </section>
+        <footer class="flex flex-col items-center py-16">
+          <img src="/assets/images/logo-dark.svg" alt="" class="mb-12" />
+          <div class="flex gap-x-6">
+            <img src="/assets/images/icon-facebook.svg" alt="" />
+            <img src="/assets/images/icon-twitter.svg" alt="" />
+            <img src="/assets/images/icon-instagram.svg" alt="" />
+          </div>
+        </footer>
+      </div>
+    </div>
   </body>
 </html>
