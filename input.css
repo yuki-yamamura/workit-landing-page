@@ -2,7 +2,81 @@
 @tailwind components;
 @tailwind utilities;
 
-/* section,
-header {
-  padding-inline: 1rem;
-} */
+@layer base {
+  html {
+    @apply text-base xl:text-lg;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply bg-eucaplyptus py-4 px-6 font-semibold text-darkPurple hover:bg-darkPurple hover:text-eucaplyptus hover:ring-2 hover:ring-inset hover:ring-eucaplyptus focus:bg-darkPurple focus:text-eucaplyptus focus:outline-none focus:ring-2 focus:ring-inset focus:ring-eucaplyptus;
+  }
+}
+
+#hero::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -10;
+  background-color: #24053e;
+  content: '';
+}
+
+#hero::after {
+  position: absolute;
+  bottom: -9rem;
+  left: 0;
+  height: 9rem;
+  width: 100%;
+  z-index: -10;
+  transform: scaleX(1.5);
+  border-radius: 0 0 50% 50%;
+  background-color: #24053e;
+  content: '';
+}
+
+#features::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -20;
+  background-color: #fcf8ff;
+  content: '';
+}
+
+#features::after {
+  position: absolute;
+  bottom: -4rem;
+  left: 0;
+  height: 9rem;
+  width: 100%;
+  z-index: -20;
+  transform: scaleX(1.5);
+  border-radius: 0 0 50% 50%;
+  background-color: #fcf8ff;
+  content: '';
+}
+
+@media (min-width: 768px) {
+  #hero::after {
+    bottom: -12rem;
+    height: 12rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  #hero::after {
+    bottom: -20rem;
+    height: 20rem;
+  }
+
+  #features::after {
+    bottom: -10rem;
+    height: 20rem;
+  }
+}
